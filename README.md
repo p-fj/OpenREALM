@@ -207,6 +207,16 @@ roslaunch realm_ros alexa_noreco.launch
 ```sh
 roslaunch realm_ros alexa_reco.launch
 ```
+
+- 2.5D mapping with visual SLAM and surface reconstruction using the direct ROS interface:
+```sh
+roslaunch realm_ros alexa_reco_ros.launch
+```
+
+Note: Republishing the image topic may be necessary with something like this
+```sh
+rosrun image_transport republish compressed in:=/down/pointgrey_image raw out:=/down/pointgrey_0/image
+```
   
 ## Docker 
 OpenREALM can also be used with a docker. The docker is based on Ubuntu 18.04 and all files related to it
@@ -253,9 +263,12 @@ Robotics Best Paper Award).
 [2] Christian Häne, Lionel Heng, Gim Hee Lee, Alexey Sizov, Marc Pollefeys, Real-Time Direct Dense Matching on
 Fisheye Images Using Plane-Sweeping Stereo, Proc Int. Conf. on 3D Vison (3DV) 2014
 
+**Accuracy analysis of this pipeline**
+[3]  A. Kern, P. Fanta-Jende, P. Glira, F. Bruckmüller, and C. Sulzbachner, AN ACCURATE REAL-TIME UAV MAPPING SOLUTION FOR THE GENERATION OF ORTHOMOSAICS AND SURFACE MODELS, Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., XLIII-B1-2021, 165–171, 2021 
+
 **Other**
 
-[3] P. Fankhauser and M. Hutter, "A Universal Grid Map Library: Implementation and Use Case for Rough Terrain Navigation",
+[4] P. Fankhauser and M. Hutter, "A Universal Grid Map Library: Implementation and Use Case for Rough Terrain Navigation",
 in Robot Operating System (ROS) – The Complete Reference (Volume 1), A. Koubaa (Ed.), Springer, 2016. 
 
-[4] T. Hinzmann, J. L. Schönberger, M. Pollefeys, and R. Siegwart, "Mapping on the Fly: Real-time 3D Dense Reconstruction, Digital Surface Map and Incremental Orthomosaic Generation for Unmanned Aerial Vehicles"
+[5] T. Hinzmann, J. L. Schönberger, M. Pollefeys, and R. Siegwart, "Mapping on the Fly: Real-time 3D Dense Reconstruction, Digital Surface Map and Incremental Orthomosaic Generation for Unmanned Aerial Vehicles"
