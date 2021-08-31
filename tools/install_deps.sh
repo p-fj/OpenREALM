@@ -155,7 +155,7 @@ cmake \
     -DCMAKE_CXX_FLAGS=-std=c++11 \
     -DBUILD_SHARED_LIBS=ON \
     -DBUILD_UNITTESTS=OFF \
-    -DBUILD_WITH_MARCH_NATIVE=ON \
+    -DBUILD_WITH_MARCH_NATIVE=OFF \
     -DG2O_USE_CHOLMOD=OFF \
     -DG2O_USE_CSPARSE=ON \
     -DG2O_USE_OPENGL=OFF \
@@ -169,7 +169,7 @@ cd ~ && mkdir openvslam && cd openvslam
 git clone https://github.com/laxnpander/openvslam.git
 cd openvslam && mkdir build && cd build
 cmake \
-    -DBUILD_WITH_MARCH_NATIVE=ON \
+    -DBUILD_WITH_MARCH_NATIVE=OFF \
     -DUSE_PANGOLIN_VIEWER=OFF \
     -DUSE_SOCKET_PUBLISHER=OFF \
     -DUSE_STACK_TRACE_LOGGER=ON \
