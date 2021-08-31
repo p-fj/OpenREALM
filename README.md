@@ -264,6 +264,7 @@ Robotics Best Paper Award).
 Fisheye Images Using Plane-Sweeping Stereo, Proc Int. Conf. on 3D Vison (3DV) 2014
 
 **Accuracy analysis of this pipeline**
+
 [3]  A. Kern, P. Fanta-Jende, P. Glira, F. Bruckmüller, and C. Sulzbachner, AN ACCURATE REAL-TIME UAV MAPPING SOLUTION FOR THE GENERATION OF ORTHOMOSAICS AND SURFACE MODELS, Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., XLIII-B1-2021, 165–171, 2021 
 
 **Other**
